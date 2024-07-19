@@ -1,8 +1,7 @@
-let seed = 42
 
 function msm() {
 
-    let result = (seed * seed).toString().slice(1, 3)
+    let result = (seed * seed).toString().padStart(4, '0').slice(1, 3)
 
     seed = parseInt(result)
 
